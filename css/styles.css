@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+html {
+    background: url("../img/snowflake.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#formContainer {
+    background-color: #222;
+}
+
+fieldset {
+    border: 1px solid white;
+    padding: 1em;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin: 0 1em;
+    font-size: 1.5em;
+}
+
+form div {
+    padding: 5px;
+}
+
+form label {
+    display:inline-block;
+    width:200px;
+}
+
+form input[id="email"], form input[id="firstname"], form input[id="lastname"] {
+}
+
+form #emailFail {
+    font-size: 1.3em;
+    color: red;
+    font-weight: bold;
+}
+
+#columns {
+    /* Three column layout */
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+
+    -webkit-column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    column-rule: 1px solid black;
+}
+
+body {
+    overflow: auto;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Itim', cursive;
+    font-size: 1em;
+    color: white;
+}
+#start {
+    background-color: blue;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+div#userGuess, header>p {
+    color: black;
+    background-color: white;
+    padding: 1em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+body h1 {
+    text-align: center;
+}
+
+body div div p span#letters {
+    padding-left: 1em;
+    letter-spacing: 1em;
+}
+
+canvas {
+/*    border: 1px solid white;*/
+    margin: 0 200px;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1em;
+}
+
+li {
+    display: inline;
+}
+li a {
+    padding: 1em;
+    color: white;
+    font-size: 1.5em;
+}
+
+#personalInfo, #avatar {
+    float: left;
+}
+
+#newsletter {
+    clear: both;
+}
+
+#avatar {
+    margin-left: 3em;
+}
+
+#avatar h2 {
+    margin: 0;
+}
+
+#avatar img {
+    width: 150px;
+    height: 150px;
+}
+#avatar img.arrow {
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+}

@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Michael Regert P4: JQuery Mobile Project</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <!--link rel="stylesheet" href="css/styles.css"-->
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Play snowman game</a></li>
+                    <li><a href="form.html">Sign up for more games</a></li>
+                </ul>
+            </nav>
+            <h1>Snowman!</h1>
+            <p>
+                This game is similar to "Hangman" but with a snowman (more appropriate!). Enter in letters one at a time
+                to guess the word. If the letter you pick is not in the word, a portion of the snowman
+                is drawn. If the snowman is completely drawn before the word is guessed, you lose. The
+                snowman consists of a "Bottom", "Middle", "Left Arm", "Right Arm", and "Head" which gives
+                you 5 tries.<br><br><button id="start">Start A New Game</button>
+            </p>
+        </header>
+        <div>
+            <canvas width="500" height="400" id="canvas"></canvas>
+            <div id="userGuess">
+                <p>Remaining Letters:<span id="letters"></span></p>
+                <label>Enter In a Letter To Guess The Word: <input id="guess" type="text" maxlength="1" pattern="[A-Za-z]" /></label><input
+                    id="submit" type="submit" hidden="hidden" />
+            </div>
+        </div>
+        <!-- javascript -->
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/16.7.3/jcanvas.js"></script>
+        <script src="js/canvas.js"></script>
+    </body>
+
+</html>

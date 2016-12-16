@@ -1,0 +1,6 @@
+/* Styles */
+
+#home, #lorem, #users, #password {
+    padding: 2%;
+    width: 96%;
+}
