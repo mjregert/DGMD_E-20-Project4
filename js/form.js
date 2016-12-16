@@ -7,6 +7,17 @@ $(document).ready(function() {
     //******** NEW JQUERY-UI INTERACTION ************
     $("#formContainer").resizable();
 
+    //******** NEW JQUERY-UI INTERACTION ************
+    $('#avatarImg').draggable();
+    $('#drop_area').droppable({
+        drop: function() {
+            $('.arrow').hide();
+            $('#avatar_header').hide();
+            alert( "Avatar Selected" );
+        }
+    });
+
+
     var avatars = ["img/avatar1.png","img/avatar2.png","img/avatar3.png","img/avatar4.png","img/avatar5.png","img/avatar6.png"];
     var selectedAvatar = 0;
 
