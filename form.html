@@ -1,140 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="//code.jquery.com/ui1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <title>Michael Regert's Assignment 4: jQuery Mobile and jQuery UI</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <title>Michael Regert's Assignment 4: jQuery Mobile and jQuery UI</title>
+</head>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Play snowman game</a></li>
-                    <li><a href="form.html">Sign up for more games</a></li>
-                </ul>
-            </nav>
-            <h1>Account Creation</h1>
-            <div id="thanks" title="Account Creation">
-                <p>Thank you for chiosing to create an account to play more games and compete at higher
-                    levels!
-                </p>
-            </div>
-        </header>
-
-        <div id="formContainer">
-            <form>
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <div id="personalInfo">
-                        <div>
-                            <label for="email"><b>Email Address</b></label>
-                            <input id="email" type="email" required placeholder="you@somewhere.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-                        </div>
-                        <div>
-                            <label for="age"><b>Age</b></label>
-                            <input id="age" type="number" aria-required="true">
-                        </div>
-                        <div>
-                            <label for="username"><b>Create a User Name</b></label>
-                            <input id="username" type="text" required aria-required="true">
-                        </div>
-                        <div>
-                            <label for="password"><b>Set a Password</b></label>
-                            <input id="password" type="password" required aria-required="true">
-                        </div>
-                        <div>
-                            <label for="cpassword"><b>Confirm Password</b></label>
-                            <input id="cpassword" type="password" required aria-required="true">
-                        </div>
-                    </div>
-                    <div id="avatar">
-                        <h2 id="avatar_header">Select an Avatar</h2>
-                        <img src="img/Actions-go-previous-icon.png" alt="Previous" class="arrow" />
-                        <img id="avatarImg" src="img/avatar1.png" alt="Avatar" />
-                        <img src="img/Actions-go-next-icon.png" alt="Next" class="arrow" />
-                    </div>
-                    <div id="avatar_drop">
-                        <h2>Drop your Avatar Here</h2>
-                        <div id="drop_area"></div>
-                    </div>
-                </fieldset>
-                <div id="newsletter">
-                    <input id="subscribe" type="checkbox" aria-checked="false">
-                    <label for="subscribe"><b>Subscribe to Newsletter</b></label>
-                </div>
-                <fieldset id="genreFieldSet" hidden>
-                    <legend>Newsletter Preferences</legend>
-                    <div>
-                        <label for="dob"><b>Join our Birthday Club</b></label>
-                        <input id="dob" type="date">
-                    </div>
-                    <p>Please select your gaming interests to customize the newsletter to your preferences!</p>
-                    <div id="columns">
-                        <div>
-                            <input id="action" name="genre" type="checkbox" aria-checked="false">
-                            <label for="action">Action Games</label>
-                        </div>
-                        <div>
-                            <input id="adventure" name="genre" type="checkbox" aria-checked="false">
-                            <label for="adventure">Adventure Games</label>
-                        </div>
-                        <div>
-                            <input id="board" name="genre" type="checkbox" aria-checked="false">
-                            <label for="board">Board Games</label>
-                        </div>
-                        <div>
-                            <input id="card" name="genre" type="checkbox" aria-checked="false">
-                            <label for="card">Card Games</label>
-                        </div>
-                        <div>
-                            <input id="logic" name="genre" type="checkbox" aria-checked="false">
-                            <label for="logic">Logic Games</label>
-                        </div>
-                        <div>
-                            <input id="racing" name="genre" type="checkbox" aria-checked="false">
-                            <label for="racing">Racing Games</label>
-                        </div>
-                        <div>
-                            <input id="rpg" name="genre" type="checkbox" aria-checked="false">
-                            <label for="rpg">Role Playing Games</label>
-                        </div>
-                        <div>
-                            <input id="simulation" name="genre" type="checkbox" aria-checked="false">
-                            <label for="simulation">Simulation Games</label>
-                        </div>
-                        <div>
-                            <input id="strategy" name="genre" type="checkbox" aria-checked="false">
-                            <label for="strategy">Strategy Games</label>
-                        </div>
-                        <div>
-                            <input id="sports" name="genre" type="checkbox" aria-checked="false">
-                            <label for="sports">Sports Games</label>
-                        </div>
-                        <div>
-                            <input id="trivia" name="genre" type="checkbox" aria-checked="false">
-                            <label for="trivia">Trivia Games</label>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <div>
-                    <input id="reset" type="reset" value="Reset Form">
-                    <input id="submit" type="submit" value="Create Account">
-                </div>
-            </form>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Play snowman game</a></li>
+                <li><a href="form.html">Sign up for more games</a></li>
+            </ul>
+        </nav>
+        <h1>Account Creation</h1>
+        <div id="thanks" title="Account Creation">
+            <p>Thank you for chiosing to create an account to play more games and compete at higher levels!
+            </p>
         </div>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
+    </header>
 
-        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-            crossorigin="anonymous"></script>
+    <div id="formContainer">
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div id="personalInfo">
+                    <div>
+                        <label for="email"><b>Email Address</b></label>
+                        <input id="email" type="email" required placeholder="you@somewhere.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                    </div>
+                    <div>
+                        <label for="age"><b>Age</b></label>
+                        <input id="age" type="number" aria-required="true">
+                    </div>
+                    <div>
+                        <label for="username"><b>Create a User Name</b></label>
+                        <input id="username" type="text" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="password"><b>Set a Password</b></label>
+                        <input id="password" type="password" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="cpassword"><b>Confirm Password</b></label>
+                        <input id="cpassword" type="password" required aria-required="true">
+                    </div>
+                </div>
+                <div id="avatar" class="ui-widget-content">
+                    <h2 id="avatar_header">Select an Avatar</h2>
+                    <img src="img/Actions-go-previous-icon.png" alt="Previous" class="arrow" />
+                    <img id="avatarImg" src="img/avatar1.png" alt="Avatar" />
+                    <img src="img/Actions-go-next-icon.png" alt="Next" class="arrow" />
+                </div>
+                <div id="avatar_drop">
+                    <h2>Drop your Avatar Here</h2>
+                    <div id="drop_area"></div>
+                </div>
+            </fieldset>
+            <div id="newsletter">
+                <input id="subscribe" type="checkbox" aria-checked="false">
+                <label for="subscribe"><b>Subscribe to Newsletter</b></label>
+            </div>
+            <fieldset id="genreFieldSet" hidden>
+                <legend>Newsletter Preferences</legend>
+                <div>
+                    <label for="dob"><b>Join our Birthday Club</b></label>
+                    <input id="dob" type="date">
+                </div>
+                <p>Please select your gaming interests to customize the newsletter to your preferences!</p>
+                <div id="columns">
+                    <div>
+                        <input id="action" name="genre" type="checkbox" aria-checked="false">
+                        <label for="action">Action Games</label>
+                    </div>
+                    <div>
+                        <input id="adventure" name="genre" type="checkbox" aria-checked="false">
+                        <label for="adventure">Adventure Games</label>
+                    </div>
+                    <div>
+                        <input id="board" name="genre" type="checkbox" aria-checked="false">
+                        <label for="board">Board Games</label>
+                    </div>
+                    <div>
+                        <input id="card" name="genre" type="checkbox" aria-checked="false">
+                        <label for="card">Card Games</label>
+                    </div>
+                    <div>
+                        <input id="logic" name="genre" type="checkbox" aria-checked="false">
+                        <label for="logic">Logic Games</label>
+                    </div>
+                    <div>
+                        <input id="racing" name="genre" type="checkbox" aria-checked="false">
+                        <label for="racing">Racing Games</label>
+                    </div>
+                    <div>
+                        <input id="rpg" name="genre" type="checkbox" aria-checked="false">
+                        <label for="rpg">Role Playing Games</label>
+                    </div>
+                    <div>
+                        <input id="simulation" name="genre" type="checkbox" aria-checked="false">
+                        <label for="simulation">Simulation Games</label>
+                    </div>
+                    <div>
+                        <input id="strategy" name="genre" type="checkbox" aria-checked="false">
+                        <label for="strategy">Strategy Games</label>
+                    </div>
+                    <div>
+                        <input id="sports" name="genre" type="checkbox" aria-checked="false">
+                        <label for="sports">Sports Games</label>
+                    </div>
+                    <div>
+                        <input id="trivia" name="genre" type="checkbox" aria-checked="false">
+                        <label for="trivia">Trivia Games</label>
+                    </div>
+                </div>
+            </fieldset>
 
-        <script src="js/form.js"></script>
-    </body>
+            <div>
+                <input id="reset" type="reset" value="Reset Form">
+                <input id="submit" type="submit" value="Create Account">
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <script src="js/form.js"></script>
+</body>
 
 </html>
